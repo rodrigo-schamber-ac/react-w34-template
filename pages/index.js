@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Button, Card, Col, Container, Form, FormControl, InputGroup, Row} from 'react-bootstrap';
+import {Card, Col, Container, Form, Row} from 'react-bootstrap';
 import moment from 'moment';
 import NasaPicture from '../components/NasaPicture';
 import getPicture from '../gateway/getPicture';
@@ -28,16 +28,6 @@ export default function App() {
     getPicture(formatDate(date)).then((item) => {
       
       setPicture(item);
-    
-    });
-  
-  };
-
-  function loadPictureInfo(date){
-    
-    getLiked(formatDate(date)).then((item) => {
-
-      setPictureInfo(item);
     
     });
   
