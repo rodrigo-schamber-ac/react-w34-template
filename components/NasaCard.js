@@ -23,7 +23,6 @@ export default function NasaCard(props){
                 </span>
             </div>
             <div class="col-start-1 row-start-1 flex sm:col-start-2 sm:row-span-3">
-            
                 <div class="w-full grid grid-cols-3 grid-rows-2 gap-2">
                 <div class="relative col-span-3 row-span-2 md:col-span-2">
                     <img src={props.url} alt="" class="absolute inset-0 w-full h-full object-cover bg-gray-100 sm:rounded-lg" />
