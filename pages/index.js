@@ -12,6 +12,19 @@ export default function App() {
 
   const [picture, setPicture] = useState(new NasaPicture());
   const [startDate, setStartDate] = useState(new Date());
+
+  var datePicker = (
+
+    <DatePicker
+      selected={startDate}
+      onChange={(date) => {
+                              
+        handleDateChange(date);
+                            
+      }}
+    />
+
+  );
   
   function formatDate(dateToFormat){
     
@@ -43,28 +56,14 @@ export default function App() {
   }, []);
   
   return (
-    <>
       <NasaCard
         copyright={picture.copyright}
-        handleDateChange={
-                            
-          () => handleDateChange(date)
-              
-        }
+        datePicker = {datePicker}
         explanation={picture.explanation}
         startDate={startDate}
         title={picture.title}
         url={picture.url}
       />
-      <DatePicker
-        selected={startDate}
-        onChange={(date) => {
-                            
-          handleDateChange(date);
-                          
-        }}
-      />
-    </>
   );
 };
 
