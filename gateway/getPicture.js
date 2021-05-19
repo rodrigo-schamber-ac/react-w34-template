@@ -13,6 +13,6 @@ export default async function getPicture(date) {
     
         console.log(error)
     
-    }
+    };
 
-}
+};

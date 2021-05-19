@@ -5,8 +5,7 @@ import NasaPicture from '../components/NasaPicture';
 import getPicture from '../gateway/getPicture';
 import DatePicker from 'react-datepicker';
 import 'tailwindcss/tailwind.css';
-import "react-datepicker/dist/react-datepicker.css";
-
+import 'react-datepicker/dist/react-datepicker.css';
 
 export default function App() {
 
@@ -66,6 +65,3 @@ export default function App() {
       />
   );
 };
-
-
-

@@ -8,5 +8,5 @@ export default class NasaPicture {
         this.serviceVersion = serviceVersion;
         this.title = title;
         this.url = url;
-    }
-}
+    };
+};
