@@ -59,7 +59,6 @@ export default function App() {
         copyright={picture.copyright}
         datePicker = {datePicker}
         explanation={picture.explanation}
-        startDate={startDate}
         title={picture.title}
         url={picture.url}
       />
