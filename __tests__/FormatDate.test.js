@@ -1,4 +1,3 @@
-import Faker from 'faker';
 import FormatDate from '../components/FormatDate';
 import '@testing-library/jest-dom/extend-expect';
 
