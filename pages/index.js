@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import moment from 'moment';
+import FormatDate from '../components/FormatDate';
 import NasaCard from '../components/NasaCard';
 import NasaPicture from '../components/NasaPicture';
-import getPicture from '../gateway/getPicture';
+import GetPicture from '../gateway/GetPicture';
 import DatePicker from 'react-datepicker';
 import 'tailwindcss/tailwind.css';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -24,12 +24,6 @@ export default function App() {
     />
 
   );
-  
-  function formatDate(dateToFormat){
-    
-    return moment(dateToFormat).format().slice(0,10)
-  
-  };
 
   function handleDateChange(date){
   
@@ -40,7 +34,7 @@ export default function App() {
 
   function loadPicture(date){
     
-    getPicture(formatDate(date)).then((item) => {
+    GetPicture(FormatDate(date)).then((item) => {
       
       setPicture(item);
     

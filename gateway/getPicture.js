@@ -1,7 +1,7 @@
 const apiKey = "ZlbqCV1n2S3DRVHo9beHBqpTxhZHKuYMa90lMwsB";
 const url = "https://api.nasa.gov/planetary/apod";
 
-export default async function getPicture(date) {
+export default async function GetPicture(date) {
 
     try {
     
