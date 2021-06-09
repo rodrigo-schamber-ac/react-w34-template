@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import ActivityIndicator from '../components/ActivityIndicator';
 import FormatDate from '../components/FormatDate';
 import NasaCard from '../components/NasaCard';
 import NasaPicture from '../components/NasaPicture';
